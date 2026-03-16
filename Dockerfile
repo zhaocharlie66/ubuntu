@@ -81,7 +81,7 @@ ENV PATH="$NVM_DIR/versions/node/v24.13.0/bin:$PATH"
 # ===============================
 # Apache 配置
 # ===============================
-RUN a2enmod php && \
+RUN a2enmod php8.1 && \
     a2enmod rewrite && \
     mkdir -p /var/run/sshd && \
     chmod +x /entrypoint.sh && \
